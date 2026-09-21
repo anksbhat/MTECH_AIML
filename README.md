@@ -1,87 +1,82 @@
 # Machine Learning (AIML ZG565) — Study Repository
 **BITS Pilani WILP · M.Tech AIML · Semester 1**
 
-Beginner-friendly, deep-dive study guides for the ML course — with plain-English explanations, **mental maps & diagrams**, detailed math, fully worked examples, and runnable Python for every topic.
+Beginner-friendly study guides for the ML course with clear explanations, visual mental maps, worked examples, and runnable Python code.
 
 ---
 
 ## 📁 Repository structure
 
 ```
-Machine Learning/
-├── README.md                         ← you are here (index)
-├── main.py                           ← scratch file
-│
+.
+├── README.md
+├── main.py
 ├── Machine Learning/
-│   ├── 01_Course_Slides_and_Handout/     ← original course PDFs
-│   │   ├── AMLSIZG565_ Machine Learning COURSE HANDOUT (1).pdf
-│   │   ├── AIML ZG565(ML)_Module 1.pptx.pdf
-│   │   ├── AIML ZG565(ML)_Module 2.pdf
-│   │   └── AIML ZG565(ML)_Module 3.pdf
-│
-├── 02_Reference_Textbooks/           ← prescribed books
-│   ├── MachineLearningTomMitchell.pdf                 (T1)
-│   └── Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf  (R1)
-│
-│   └── 03_Study_Guides/                  ← the guides (one folder per module)
-│       ├── Module1_Introduction/
-│       ├── Module2_Workflow_and_Mathematics/
-│       ├── Module3_Linear_Regression/
-│       └── Module4_Linear_Classification/
+│   ├── 01_Course_Slides_and_Handout/
+│   ├── 03_Study_Guides/
+│   │   ├── Module1_Introduction/
+│   │   ├── Module2_Workflow_and_Mathematics/
+│   │   ├── Module3_Linear_Regression/
+│   │   ├── Module4_Linear_Classification/
+│   │   ├── Module5_Decision_Trees/
+│   │   ├── Module6_Instance_Based_Learning/
+│   │   └── Module7_Support_Vector_Machines/
+│   └── 04_Question_Papers/
+├── Mathematics for Machine Learning/
+└── deep neural networks/
 ```
 
-Each module folder contains:
-- `*_Guide.md` — the study guide (open in any Markdown viewer / PyCharm preview)
-- `Module<N>_examples.py` — runnable, verified worked examples
-- `images/` — all diagrams & **mental maps** used by the guide
+Each study-guide module typically includes:
+- `*_Guide.md` — module notes
+- `Module<N>_examples.py` — runnable examples
+- `images/` — diagrams used in the guide
 
 ---
 
-## 📚 Study guides (click to open)
+## 📚 Study guides
 
-| # | Module | Guide | Covers |
-|---|--------|-------|--------|
-| 1 | Introduction | [Module1_Introduction_Guide.md](Machine%20Learning/03_Study_Guides/Module1_Introduction/Module1_Introduction_Guide.md) | What/Why ML, ⟨T,P,E⟩, designing a learner, types of ML, workflow |
-| 2a | ML Workflow | [Module2_MachineLearningWorkflow_Guide.md](Machine%20Learning/03_Study_Guides/Module2_Workflow_and_Mathematics/Module2_MachineLearningWorkflow_Guide.md) | Data & attribute types, data quality, preprocessing, sampling, feature engineering, metrics |
-| 2b | Math Preliminaries | [Module2_MathematicalPreliminaries_Guide.md](Machine%20Learning/03_Study_Guides/Module2_Workflow_and_Mathematics/Module2_MathematicalPreliminaries_Guide.md) | Linear algebra, calculus, probability, decision theory, information theory |
-| 3 | Linear Regression | [Module3_LinearModelsForRegression_Guide.md](Machine%20Learning/03_Study_Guides/Module3_Linear_Regression/Module3_LinearModelsForRegression_Guide.md) | Least squares, normal equation, gradient descent, R², polynomial/basis, bias-variance, regularization |
-| 4 | Linear Classification | [Module4_LinearModelsForClassification_Guide.md](Machine%20Learning/03_Study_Guides/Module4_Linear_Classification/Module4_LinearModelsForClassification_Guide.md) | Discriminant functions, decision theory, logistic regression, log-loss, softmax, ROC/AUC |
-
-> Each guide opens with a **🗺️ bird's-eye mental map** summarising the whole module.
+| # | Module | Guide |
+|---|--------|-------|
+| 1 | Introduction | [Module1_Introduction_Guide.md](Machine%20Learning/03_Study_Guides/Module1_Introduction/Module1_Introduction_Guide.md) |
+| 2a | ML Workflow | [Module2_MachineLearningWorkflow_Guide.md](Machine%20Learning/03_Study_Guides/Module2_Workflow_and_Mathematics/Module2_MachineLearningWorkflow_Guide.md) |
+| 2b | Math Preliminaries | [Module2_MathematicalPreliminaries_Guide.md](Machine%20Learning/03_Study_Guides/Module2_Workflow_and_Mathematics/Module2_MathematicalPreliminaries_Guide.md) |
+| 3 | Linear Regression | [Module3_LinearModelsForRegression_Guide.md](Machine%20Learning/03_Study_Guides/Module3_Linear_Regression/Module3_LinearModelsForRegression_Guide.md) |
+| 4 | Linear Classification | [Module4_LinearModelsForClassification_Guide.md](Machine%20Learning/03_Study_Guides/Module4_Linear_Classification/Module4_LinearModelsForClassification_Guide.md) |
+| 5 | Decision Trees | [Module5_DecisionTrees_Guide.md](Machine%20Learning/03_Study_Guides/Module5_Decision_Trees/Module5_DecisionTrees_Guide.md) |
+| 6 | Instance-Based Learning | [Module6_InstanceBasedLearning_Guide.md](Machine%20Learning/03_Study_Guides/Module6_Instance_Based_Learning/Module6_InstanceBasedLearning_Guide.md) |
+| 7 | Support Vector Machines | [Module7_SupportVectorMachines_Guide.md](Machine%20Learning/03_Study_Guides/Module7_Support_Vector_Machines/Module7_SupportVectorMachines_Guide.md) |
 
 ---
 
-## ▶️ Running the code examples
+## ▶️ Running code examples
 
-The examples use `numpy`, `pandas`, `scikit-learn` (and `matplotlib` for regenerating diagrams).
+Install dependencies:
 
-```powershell
-# one-time install
+```bash
 pip install numpy pandas scikit-learn matplotlib
+```
 
-# run a module's worked examples (from its folder)
-cd "Machine Learning\03_Study_Guides\Module3_Linear_Regression"
+Run a module example:
+
+```bash
+cd "/home/runner/work/MTECH_AIML/MTECH_AIML/Machine Learning/03_Study_Guides/Module3_Linear_Regression"
 python Module3_examples.py
 ```
 
-Every printed number in the examples matches the worked examples inside the corresponding guide.
-
 ---
 
-## 🗺️ Course roadmap (from the handout)
+## 🗺️ Course roadmap status
 
 | Module | Topic | Status |
 |--------|-------|--------|
-| M1 | Introduction | ✅ Guide ready |
-| M2 | ML Workflow (+ Math Preliminaries) | ✅ Guide ready |
-| M3 | Linear Models for Regression | ✅ Guide ready |
-| M4 | Linear Models for Classification | ✅ Guide ready |
-| M5 | Decision Trees | ⬜ next |
-| M6 | Instance-Based Learning | ⬜ |
-| M7 | Support Vector Machines | ⬜ |
-| M8 | Bayesian Learning | ⬜ |
-| M9 | Ensemble Learning | ⬜ |
-| M10 | Unsupervised Learning | ⬜ |
-| M11 | Model Evaluation / Comparison | ⬜ |
-
-**Textbooks:** T1 = Mitchell (1997); R1 = Bishop (2006); R2 = Tan, Steinbach & Kumar.
+| M1 | Introduction | ✅ Guide available |
+| M2 | ML Workflow (+ Math Preliminaries) | ✅ Guide available |
+| M3 | Linear Models for Regression | ✅ Guide available |
+| M4 | Linear Models for Classification | ✅ Guide available |
+| M5 | Decision Trees | ✅ Guide available |
+| M6 | Instance-Based Learning | ✅ Guide available |
+| M7 | Support Vector Machines | ✅ Guide available |
+| M8 | Bayesian Learning | ⬜ Pending |
+| M9 | Ensemble Learning | ⬜ Pending |
+| M10 | Unsupervised Learning | ⬜ Pending |
+| M11 | Model Evaluation / Comparison | ⬜ Pending |
